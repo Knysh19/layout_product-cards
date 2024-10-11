@@ -29,57 +29,75 @@
 
   <!-- #endregion -->
 
-  <body
-    class="card"
-    data-qa="card"
-  >
-    <h1 class="imac">
-      <img
-        src="images/Rectangle 4.png"
-        alt="mac"
-      />
-    </h1>
+  <body>
+    <card data-qa="card">
+      <header class="product-image">
+        <img
+          src="images/imac.jpeg"
+          width="160"
+          height="134"
+          alt="imac display"
+        />
+      </header>
 
-    <h2 class="h2">APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)</h2>
-
-    <div class="product-code">Product code: 195434</div>
-
-    <div class="reviews">
-      <div class="stars">
-        <img
-          src="images/star.svg"
-          alt="star"
-        />
-        <img
-          src="images/star.svg"
-          alt="star"
-        />
-        <img
-          src="images/star.svg"
-          alt="star"
-        />
-        <img
-          src="images/star.svg"
-          alt="star"
-        />
-        <img
-          src="images/star-active.svg"
-          alt="star"
-        />
+      <div class="description">
+        APPLE A1419 iMac 27" Retina 5K Monoblock (MNED2UA/A)
       </div>
-      <div class="reviews__revs">Reviews: 5</div>
-    </div>
 
-    <div class="price">
-      <div class="price__text">Price:</div>
-      <div class="price__amount">$2,199</div>
-    </div>
+      <div class="product-code">Product code: 195434</div>
 
-    <div
-      class="button"
-      data-qa="hover"
-    >
-      <button class="button__btn">BUY</button>
-    </div>
+      <div class="reviews">
+        <ul class="reviews__stars">
+          <li>
+            <img
+              src="images/star-active.svg"
+              alt="active star"
+            />
+          </li>
+          <li>
+            <img
+              src="images/star-active.svg"
+              alt="active star"
+            />
+          </li>
+          <li>
+            <img
+              src="images/star-active.svg"
+              alt="active star"
+            />
+          </li>
+          <li>
+            <img
+              src="images/star-active.svg"
+              alt="active star"
+            />
+          </li>
+          <li>
+            <img
+              src="images/star.svg"
+              alt="star"
+            />
+          </li>
+        </ul>
+        <div class="reviews__revs">Reviews: 5</div>
+      </div>
+
+      <div class="price">
+        <div class="price__text">Price:</div>
+        <div class="price__amount">$2,199</div>
+      </div>
+
+      <div
+        class="button-wrapper"
+        data-qa="hover"
+      >
+        <button
+          class="button-wrapper__element"
+          data-qa="hover"
+        >
+          BUY
+        </button>
+      </div>
+    </card>
   </body>
 </html>

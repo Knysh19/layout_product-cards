@@ -2,27 +2,28 @@
 $primary-color: #00acdc;
 $font-color: #060b35;
 $light-grey: #616070;
-$font-family: 'Roboto', sans-serif;
+$font-family: 'Roboto';
 
 html {
   margin: 0;
   font-family: $font-family;
 }
 
-.card {
+body {
   display: flex;
   flex-direction: column;
   margin: 0;
   width: 200px;
+  justify-content: space-between;
 }
 
-.imac {
+.product-image {
   display: flex;
-  // padding-top: 32px;
   justify-content: center;
+  padding-top: 32px;
 }
 
-.h2 {
+.description {
   color: $font-color;
   text-align: left;
   padding-top: 40px;
@@ -40,23 +41,34 @@ html {
   line-height: 14px;
   text-align: left;
   padding-left: 16px;
+  padding-top: 4px;
 }
 
 .reviews {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
   padding-left: 16px;
-  padding-right: 16px;
+  padding-top: 16px;
+
+  &__stars {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 4px;
+  }
 
   &__revs {
     font-size: 10px;
     font-weight: 400;
     line-height: 14px;
+    text-align: right;
   }
 }
 
+li {
+  margin-right: 4px;
+}
 
 .price {
   margin-top: 0;
@@ -81,27 +93,32 @@ html {
   }
 }
 
-.button {
+.button-wrapper {
   text-align: center;
+  width: 166px;
+  height: 40px;
   padding: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
 
-  &__btn {
-    padding: 15px 30px;
+  &__element {
     font-size: 14px;
     color: #fff;
     background-color: $primary-color;
-    border: 2px solid $primary-color;
+    border: 1px solid $primary-color;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.4s ease;
     font-weight: 700;
     line-height: 16px;
-    min-width: 166px;
+    width: 166px;
+    height: 40px;
   }
 }
 
-.button__btn:hover {
+.button-wrapper__element:hover {
   background-color: white;
   color: $primary-color;
-  border: 2px solid $primary-color;
+  border: 1px solid $primary-color;
 }
