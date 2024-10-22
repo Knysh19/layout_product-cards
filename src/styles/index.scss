@@ -24,7 +24,6 @@ h2 {
   width: 200px;
   box-sizing: border-box;
   border-radius: 5px;
-  border: 1px solid #f3f3f3;
   padding: 32px 16px 16px;
 }
 
@@ -52,9 +51,10 @@ h2 {
 }
 
 .card__review {
-  display: flex;
   align-items: center;
+  justify-content: space-between;
   margin-top: 16px;
+  display: flex;
 }
 
 .card__review_count {
@@ -71,8 +71,6 @@ h2 {
   padding-left: 1px;
   width: Fixed (166px);
   height: Hug (16px);
-  // margin: auto;
-  
 }
 
 .stars__star {
@@ -80,6 +78,7 @@ h2 {
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .stars__star-active {
@@ -87,6 +86,7 @@ h2 {
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .card__price {
